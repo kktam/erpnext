@@ -1,0 +1,63 @@
+graph TD
+    classDef frameworkNode fill:#E8F5E9,stroke:#4CAF50,stroke-width:3px,color:#1B5E20
+    classDef dirNode fill:#E3F2FD,stroke:#2196F3,stroke-width:2px,color:#0D47A1
+    classDef fileNode fill:#FFFFFF,stroke-width:1.5px
+    Root["📦 Unknown"]:::frameworkNode
+
+    subgraph Nsub_erpnext["📁 erpnext"]
+        style Nsub_erpnext fill:#B0BEC522,stroke:#B0BEC5,stroke-width:2px
+        Nerpnext_yarn_lock["📄 yarn.lock"]:::fileNode
+        style Nerpnext_yarn_lock stroke:#78909C
+        Nerpnext_transaction_deletion_import_logic_summary_md["📝 transaction-deletion-import-logic-summary.md"]:::fileNode
+        style Nerpnext_transaction_deletion_import_logic_summary_md stroke:#555555
+        Nerpnext_TRADEMARK_POLICY_md["📝 TRADEMARK_POLICY.md"]:::fileNode
+        style Nerpnext_TRADEMARK_POLICY_md stroke:#555555
+        Nerpnext_sponsors_md["📝 sponsors.md"]:::fileNode
+        style Nerpnext_sponsors_md stroke:#555555
+        Nerpnext_sider_yml["⚙️ sider.yml"]:::fileNode
+        style Nerpnext_sider_yml stroke:#CB171E
+        Nerpnext_SECURITY_md["📝 SECURITY.md"]:::fileNode
+        style Nerpnext_SECURITY_md stroke:#555555
+        Nerpnext_README_md["📝 README.md"]:::fileNode
+        style Nerpnext_README_md stroke:#555555
+        Nerpnext_pyproject_toml["⚙️ pyproject.toml"]:::fileNode
+        style Nerpnext_pyproject_toml stroke:#78909C
+        Nerpnext_package_json["📋 package.json"]:::fileNode
+        style Nerpnext_package_json stroke:#5C5C5C
+        Nerpnext_license_txt["📄 license.txt"]:::fileNode
+        style Nerpnext_license_txt stroke:#78909C
+        Nerpnext_crowdin_yml["⚙️ crowdin.yml"]:::fileNode
+        style Nerpnext_crowdin_yml stroke:#CB171E
+        Nerpnext_commitlint_config_js["📙 commitlint.config.js"]:::fileNode
+        style Nerpnext_commitlint_config_js stroke:#F7DF1E
+        Nerpnext_CODE_OF_CONDUCT_md["📝 CODE_OF_CONDUCT.md"]:::fileNode
+        style Nerpnext_CODE_OF_CONDUCT_md stroke:#555555
+        Nerpnext_CODEOWNERS["📄 CODEOWNERS"]:::fileNode
+        style Nerpnext_CODEOWNERS stroke:#78909C
+        Nerpnext_codecov_yml["⚙️ codecov.yml"]:::fileNode
+        style Nerpnext_codecov_yml stroke:#CB171E
+        subgraph Nerpnext_semgrep["📁 semgrep"]
+            style Nerpnext_semgrep fill:#B0BEC522,stroke:#B0BEC5,stroke-width:1.5px
+            Nerpnext_semgrep_test_correctness_yml["⚙️ test-correctness.yml"]:::fileNode
+            style Nerpnext_semgrep_test_correctness_yml stroke:#CB171E
+        end
+        subgraph Nerpnext_erpnext["📁 erpnext"]
+            style Nerpnext_erpnext fill:#B0BEC522,stroke:#B0BEC5,stroke-width:1.5px
+            Nerpnext_erpnext___init___py["🐍 __init__.py"]:::fileNode
+            style Nerpnext_erpnext___init___py stroke:#3776AB
+            Nerpnext_erpnext_patches_txt["📄 patches.txt"]:::fileNode
+            style Nerpnext_erpnext_patches_txt stroke:#78909C
+            Nerpnext_erpnext_modules_txt["📄 modules.txt"]:::fileNode
+            style Nerpnext_erpnext_modules_txt stroke:#78909C
+            Nerpnext_erpnext_hooks_py["🐍 hooks.py"]:::fileNode
+            style Nerpnext_erpnext_hooks_py stroke:#3776AB
+            Nerpnext_erpnext_exceptions_py["🐍 exceptions.py"]:::fileNode
+            style Nerpnext_erpnext_exceptions_py stroke:#3776AB
+            Nerpnext_erpnext_deprecation_dumpster_py["🐍 deprecation_dumpster.py"]:::fileNode
+            style Nerpnext_erpnext_deprecation_dumpster_py stroke:#3776AB
+        end
+    end
+
+    Root --> Nsub_erpnext
+
+    %% Import connections
